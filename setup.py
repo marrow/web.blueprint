@@ -86,19 +86,7 @@ setup(
 	include_package_data = True,
 	namespace_packages = [
 			'web',  # primary namespace
-			'web.app',  # application code goes here
 			'web.blueprint',  # quick-start templates
-			'web.component',  # contentment pluggable components
-			'web.component.file',  # do not use
-			'web.component.file.backend',  # file storage back-ends
-			'web.component.page',  # do not use
-			'web.component.page.block',  # embeddable blocks
-			'web.cli',  # extensible command-line interface and scripts
-			'web.dispatch',  # extensible dispatch mechanisms
-			'web.ext',  # framework extensions
-			'web.rpc',  # alternate transport mechanisms
-			'web.server',  # front-end WSGI bridges
-			'web.theme',  # HTML theme and widget plugins for contentment
 		],
 	
 	entry_points = {
@@ -126,7 +114,6 @@ setup(
 	
 	extras_require = dict(
 			development = tests_require,
-			contentment = contentment_require,
 		),
 	
 	tests_require = tests_require,
